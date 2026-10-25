@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "title": "Cristian Alexander Muñoz Caro · Resume",
+    "description": "Software Analysis and Development Technologist: QA, Python automation, data and IT support. Experience, projects and certificates."
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "inicio": "Home",
+    "sobre": "About",
+    "experiencia": "Experience",
+    "proyectos": "Projects",
+    "habilidades": "Skills",
+    "certificados": "Certificates",
+    "contacto": "Contact",
+    "menu": "Open menu",
+    "tema": "Toggle light and dark mode",
+    "idioma": "Switch language to Spanish"
+  },
+  "hero": {
+    "foto_alt": "Photo of Cristian Alexander Muñoz Caro",
+    "titulo": "Software Analysis and Development Technologist · QA · Automation · Data · IT Support",
+    "ubicacion": "Medellín, Colombia",
+    "descargar": "Download resume",
+    "ver_proyectos": "View projects"
+  },
+  "sobre": {
+    "titulo": "About me",
+    "texto": "I’m passionate about technology and chose to make it my profession: today I’m a Software Analysis and Development Technologist with experience in QA, Python automation and SQL reporting, and more than 700 hours of certified training. Before moving into IT, I spent 12 years handling invoicing, inventory, purchase orders and customer service, which gave me discipline, attention to detail and a practical view of how data impacts a business. I enjoy spotting repetitive tasks and turning them into reliable, automated processes, and I’m looking to keep growing in IT by building solutions that make teams more efficient."
+  },
+  "experiencia": {
+    "titulo": "Experience",
+    "qv": {
+      "cargo": "Software Development Apprentice",
+      "periodo": "Sep 2025 – Mar 2026",
+      "b1": "Fully restructured a Python + Selenium automation tool that assigns technical tests in Moodle; proposed and built Excel-based batch assignment with automatic Word document generation, cutting the process from 7 minutes to under 30 seconds per candidate.",
+      "b2": "Built SQL reports consolidating results per candidate (score, level reached, pass rate) for the analytics team.",
+      "b3": "Ran functional tests and bug reporting, took part in code reviews, wrote technical documentation and administered WordPress and Moodle."
+    },
+    "emi": {
+      "cargo": "Sales and Administrative Assistant",
+      "periodo": "Jul 2013 – Sep 2025",
+      "b1": "Invoicing, cash handling and customer service on the DOMINIUM POS system; inventory control, purchase orders and supplier relations; administrative support and quality (QMS) and occupational health and safety (OHS) systems."
+    }
+  },
+  "proyectos": {
+    "titulo": "Projects",
+    "intro": "Case studies: the problem, how I solved it, which tools I used and what the result was.",
+    "problema": "Problem",
+    "solucion": "Solution",
+    "herramientas": "Tools",
+    "resultado": "Result",
+    "ver_detalle": "View details",
+    "ver_repo": "View repository",
+    "cerrar": "Close",
+    "privado": "Private code · demo on request",
+    "tag_sub": "Subqueries",
+    "p1": {
+      "titulo": "Moodle test assignment automation",
+      "problema": "Assigning a technical test to each candidate in Moodle took about 7 minutes of repetitive clicking, and candidates had to be processed one at a time.",
+      "solucion": "I restructured the tool in Python and Selenium and added a batch mode: it reads candidates from an Excel template and generates one Word document per candidate.",
+      "resultado": "From 7 minutes to under 30 seconds per candidate, and any number of candidates in a single run.",
+      "d1": "The original tool automated part of the process, but it was hard to maintain and handled only one candidate per run. I reorganized it by responsibility and validated the input data with Pydantic, so a mistake in the template is caught before touching Moodle.",
+      "d2": "Batch mode reads the template with openpyxl, assigns the tests in Moodle with Selenium and uses python-docx to generate each candidate's document.",
+      "d3": "The code belongs to the company, so I don't publish it or show internal screenshots. I can give a demo during an interview."
+    },
+    "p2": {
+      "titulo": "SQL results reports",
+      "problema": "The analytics team needed each candidate's score, level reached and pass rate, and that data was spread across several Moodle tables.",
+      "solucion": "SQL queries with JOINs, subqueries and CASE, published as reports inside Moodle (Configurable Reports).",
+      "resultado": "One consolidated, always up-to-date report, with no spreadsheets built by hand.",
+      "d1": "Here is an example with generic table names and fictitious data; it shows the structure of the queries without exposing the real database:",
+      "d2": "The subquery computes the percentage of correct answers for each attempt, and CASE turns the score into a level the team can read at a glance."
+    },
+    "p3": {
+      "titulo": "Modular multi-tenant ERP",
+      "problema": "A small business needs inventory, invoicing and customers in a single system, with several companies isolated within the same installation.",
+      "solucion": "An API built with Django and Django REST Framework on PostgreSQL, organized by modules, with business logic in services and everything running in Docker containers.",
+      "resultado": "78 automated tests passing with Pytest, including tenant isolation tests.",
+      "d1": "Personal project in progress. Each module (customers and suppliers, inventory, invoicing) has its own models, services and tests; inventory works as a ledger of movements that are never edited or deleted.",
+      "d2": "The code is private. I can show and walk through it during an interview."
+    },
+    "p4": {
+      "titulo": "Books Scraper & Excel Reporter",
+      "problema": "Copying data from an online book catalog by hand (title, price, rating and availability) is slow and error-prone.",
+      "solucion": "A Python script with an interactive menu: you pick a category (or all of them), it walks through every page with requests and BeautifulSoup and builds the report with openpyxl.",
+      "resultado": "A formatted Excel report ready to read: color-coded ratings, auto-sized columns, timestamp and total book count.",
+      "d1": "It uses Books to Scrape, a public catalog built for practicing web scraping. The code is split in two parts: extraction (scraper.py) and report generation (reporter.py).",
+      "d2": "The repository is public and includes instructions to run it."
+    },
+    "p5": {
+      "titulo": "This website",
+      "problema": "A one-page resume is not enough to show projects and certificates.",
+      "solucion": "A bilingual static site with no frameworks, dark mode and a filterable certificate gallery.",
+      "resultado": "Published on GitHub Pages; certificates are published with personal data covered.",
+      "d1": "Plain HTML, CSS and JavaScript with no build step. Each language's text lives in JSON files and the gallery is built from a data file.",
+      "d2": "Before publishing, a Python script covers the ID number and verification codes on every certificate and turns each page into an image, so no hidden text is left underneath."
+    },
+    "futuro": {
+      "titulo": "Coming soon",
+      "texto": "Power BI dashboards and data analysis projects from my courses."
+    }
+  },
+  "habilidades": {
+    "titulo": "Skills",
+    "qa": "QA and testing",
+    "auto": "Automation and programming",
+    "datos": "Data",
+    "herr": "Tools",
+    "ia": "AI",
+    "metod": "Methodologies",
+    "soporte": "IT support",
+    "idiomas": "Languages",
+    "funcionales": "Functional testing",
+    "proyecto_personal": "personal project",
+    "sql_aplicado": "applied during internship",
+    "excel": "Advanced Excel",
+    "eda": "Exploratory analysis with Python",
+    "formacion": "training",
+    "mantenimiento": "Preventive and corrective PC maintenance",
+    "so": "Operating system installation",
+    "diagnostico": "Fault diagnosis",
+    "espanol": "Spanish",
+    "ingles": "English",
+    "nativo": "native",
+    "basico": "basic",
+    "bases": "fundamentals",
+    "intermedio": "intermediate",
+    "basico_intermedio": "basic-intermediate",
+    "aplicado": "applied",
+    "basico_intermedio_aplicado": "basic-intermediate, applied",
+    "intermedio_aplicado": "intermediate, applied"
+  },
+  "certificados": {
+    "titulo": "Certificates",
+    "total": "700+ hours of certified training",
+    "ver_todos": "View all",
+    "ver_menos": "Show highlights only",
+    "ver_pdf": "View PDF",
+    "acta": "Graduation record",
+    "horas": "h",
+    "miniatura": "Certificate thumbnail",
+    "filtrar": "Filter certificates by category",
+    "filtros": {
+      "todos": "All",
+      "qa": "QA and quality",
+      "python-datos": "Python and data",
+      "agil": "Agile",
+      "ingles": "English",
+      "herramientas": "Tools",
+      "titulos": "Degrees"
+    },
+    "pie": "Certificates available for verification upon request.",
+    "error": "The certificates could not be loaded. Reload the page to try again."
+  },
+  "contacto": {
+    "titulo": "Contact",
+    "intro": "Have an opening or a project in mind? Write to me.",
+    "correo": "Email",
+    "ubicacion": "Location",
+    "referencias": "References available upon request.",
+    "nombre": "Name",
+    "email": "Your email",
+    "mensaje": "Message",
+    "enviar": "Send message",
+    "enviando": "Sending…",
+    "ok": "Thank you! Your message has been sent.",
+    "error": "The message could not be sent. Please email me directly.",
+    "mailto": "Your email app will open with the message ready to send.",
+    "asunto": "Contact from the online resume"
+  },
+  "footer": {
+    "texto": "Cristian Alexander Muñoz Caro · Built with HTML, CSS and JavaScript"
+  }
+}

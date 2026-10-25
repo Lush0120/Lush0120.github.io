@@ -1,0 +1,213 @@
+[
+  {
+    "id": "tecnologo-adso",
+    "nombre": { "es": "Tecnólogo en Análisis y Desarrollo de Software", "en": "Software Analysis and Development Technologist" },
+    "institucion": "SENA",
+    "horas": null,
+    "fecha": "2026-04",
+    "categoria": "titulos",
+    "archivo": "2026-04_sena_tecnologo-adso-titulo",
+    "extras": [{ "etiqueta": "acta", "archivo": "2026-04_sena_tecnologo-adso-acta" }],
+    "destacado": false
+  },
+  {
+    "id": "calidad-desarrollo",
+    "nombre": { "es": "Calidad en el Desarrollo de Software", "en": "Quality in Software Development" },
+    "institucion": "SENA",
+    "horas": 40,
+    "fecha": "2025-08",
+    "categoria": "qa",
+    "archivo": "2025-08_sena_calidad-desarrollo-software",
+    "destacado": false
+  },
+  {
+    "id": "manejo-pruebas",
+    "nombre": { "es": "Manejo de Pruebas de Software", "en": "Software Testing Management" },
+    "institucion": "SENA",
+    "horas": 40,
+    "fecha": "2025-10",
+    "categoria": "qa",
+    "archivo": "2025-10_sena_manejo-pruebas-software",
+    "destacado": true
+  },
+  {
+    "id": "marco-scrum",
+    "nombre": { "es": "Aplicación del Marco de Trabajo Scrum para Proyectos de Desarrollo de Software", "en": "Applying the Scrum Framework to Software Development Projects" },
+    "institucion": "SENA",
+    "horas": 48,
+    "fecha": "2025-12",
+    "categoria": "agil",
+    "archivo": "2025-12_sena_marco-scrum-desarrollo-software",
+    "destacado": true
+  },
+  {
+    "id": "calidad-proceso",
+    "nombre": { "es": "Aplicación de la Calidad del Software en el Proceso de Desarrollo", "en": "Applying Software Quality in the Development Process" },
+    "institucion": "SENA",
+    "horas": 40,
+    "fecha": "2026-03",
+    "categoria": "qa",
+    "archivo": "2026-03_sena_calidad-software-proceso-desarrollo",
+    "destacado": false
+  },
+  {
+    "id": "english-1",
+    "nombre": { "es": "English Does Work – Level 1", "en": "English Does Work – Level 1" },
+    "institucion": "SENA",
+    "horas": 48,
+    "fecha": "2026-06",
+    "categoria": "ingles",
+    "archivo": "2026-06_sena_english-does-work-1",
+    "destacado": false
+  },
+  {
+    "id": "english-2",
+    "nombre": { "es": "English Does Work – Level 2", "en": "English Does Work – Level 2" },
+    "institucion": "SENA",
+    "horas": 48,
+    "fecha": "2026-08",
+    "categoria": "ingles",
+    "archivo": "2026-08_sena_english-does-work-2",
+    "destacado": false
+  },
+  {
+    "id": "english-3",
+    "nombre": { "es": "English Does Work – Level 3", "en": "English Does Work – Level 3" },
+    "institucion": "SENA",
+    "horas": 48,
+    "fecha": "2026-09",
+    "categoria": "ingles",
+    "archivo": "2026-09_sena_english-does-work-3",
+    "destacado": true
+  },
+  {
+    "id": "variables-python",
+    "nombre": { "es": "Variables y Estructuras de Control en Python", "en": "Variables and Control Structures in Python" },
+    "institucion": "SENA",
+    "horas": 48,
+    "fecha": "2026-09",
+    "categoria": "python-datos",
+    "archivo": "2026-09_sena_variables-estructuras-control-python",
+    "destacado": false
+  },
+  {
+    "id": "eda-python",
+    "nombre": { "es": "Análisis Exploratorio de Datos en Python", "en": "Exploratory Data Analysis in Python" },
+    "institucion": "SENA",
+    "horas": 48,
+    "fecha": "2026-09",
+    "categoria": "python-datos",
+    "archivo": "2026-09_sena_analisis-exploratorio-python",
+    "destacado": true
+  },
+  {
+    "id": "fundamentos-python",
+    "nombre": { "es": "Fundamentos de Programación en Python", "en": "Python Programming Fundamentals" },
+    "institucion": "IzyAcademy",
+    "horas": 40,
+    "fecha": "2025-09",
+    "categoria": "python-datos",
+    "archivo": "2025-09_izyacademy_fundamentos-python",
+    "destacado": false
+  },
+  {
+    "id": "sfpc",
+    "nombre": { "es": "Scrum Foundation Professional Certificate (SFPC)", "en": "Scrum Foundation Professional Certificate (SFPC)" },
+    "institucion": "IzyAcademy",
+    "horas": 20,
+    "fecha": "2025-10",
+    "categoria": "agil",
+    "archivo": "2025-10_izyacademy_scrum-foundation-sfpc",
+    "destacado": false
+  },
+  {
+    "id": "prompting",
+    "nombre": { "es": "Prompting Eficiente en ChatGPT desde Cero", "en": "Efficient Prompting in ChatGPT from Scratch" },
+    "institucion": "IzyAcademy",
+    "horas": 23,
+    "fecha": "2025-11",
+    "categoria": "herramientas",
+    "archivo": "2025-11_izyacademy_prompting-chatgpt",
+    "destacado": false
+  },
+  {
+    "id": "selenium-pom",
+    "nombre": { "es": "Selenium WebDriver con Page Object Model", "en": "Selenium WebDriver with Page Object Model" },
+    "institucion": "IzyAcademy",
+    "horas": 30,
+    "fecha": "2026-03",
+    "categoria": "qa",
+    "archivo": "2026-03_izyacademy_selenium-webdriver-pom",
+    "destacado": true
+  },
+  {
+    "id": "selenium-screenplay",
+    "nombre": { "es": "Selenium con Screenplay", "en": "Selenium with Screenplay" },
+    "institucion": "IzyAcademy",
+    "horas": 36,
+    "fecha": "2026-03",
+    "categoria": "qa",
+    "archivo": "2026-03_izyacademy_selenium-screenplay",
+    "destacado": false
+  },
+  {
+    "id": "fundamentos-sql",
+    "nombre": { "es": "Fundamentos de SQL", "en": "SQL Fundamentals" },
+    "institucion": "IzyAcademy",
+    "horas": 36,
+    "fecha": "2026-04",
+    "categoria": "python-datos",
+    "archivo": "2026-04_izyacademy_fundamentos-sql",
+    "destacado": true
+  },
+  {
+    "id": "git",
+    "nombre": { "es": "Control de Versiones con Git", "en": "Version Control with Git" },
+    "institucion": "IzyAcademy",
+    "horas": 25,
+    "fecha": "2026-04",
+    "categoria": "herramientas",
+    "archivo": "2026-04_izyacademy_git-control-versiones",
+    "destacado": false
+  },
+  {
+    "id": "tkinter",
+    "nombre": { "es": "Domina la Creación de Interfaces Gráficas con Tkinter", "en": "Master Building GUIs with Tkinter" },
+    "institucion": "Udemy",
+    "horas": 5.5,
+    "fecha": "2025-08",
+    "categoria": "python-datos",
+    "archivo": "2025-08_udemy_interfaces-tkinter",
+    "destacado": false
+  },
+  {
+    "id": "power-bi",
+    "nombre": { "es": "Power BI", "en": "Power BI" },
+    "institucion": "Aportes en Línea / Unipymes",
+    "horas": 8,
+    "fecha": "2025-12",
+    "categoria": "python-datos",
+    "archivo": "2025-12_aportes-en-linea_power-bi",
+    "destacado": false
+  },
+  {
+    "id": "excel-cesde",
+    "nombre": { "es": "Gestión de la Información con Microsoft Excel", "en": "Information Management with Microsoft Excel" },
+    "institucion": "CESDE",
+    "horas": 40,
+    "fecha": "2026-05",
+    "categoria": "herramientas",
+    "archivo": "2026-05_cesde_gestion-informacion-excel",
+    "destacado": false
+  },
+  {
+    "id": "metodologias-agiles",
+    "nombre": { "es": "Metodologías Ágiles", "en": "Agile Methodologies" },
+    "institucion": "Universidad Católica de Oriente",
+    "horas": 40,
+    "fecha": "2026-05",
+    "categoria": "agil",
+    "archivo": "2026-05_uco_metodologias-agiles",
+    "destacado": false
+  }
+]

@@ -1,0 +1,21 @@
+# Originales SIN tapar (contienen cédula y códigos de verificación). Nunca se suben.
+_originales/
+
+# Imágenes de revisión generadas localmente para inspeccionar la redacción
+_revision/
+
+# Entorno virtual y cachés de Python (scripts de preparación)
+venv/
+__pycache__/
+*.pyc
+
+# Archivos temporales del sistema y editores
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+~$*
+.vscode/
+
+# Especificación interna del proyecto (no es contenido del sitio)
+SPEC.md

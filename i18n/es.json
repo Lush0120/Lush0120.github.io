@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "title": "Cristian Alexander Muñoz Caro · CV",
+    "description": "Tecnólogo en Análisis y Desarrollo de Software: QA, automatización con Python, datos y soporte TI. Experiencia, proyectos y certificados."
+  },
+  "nav": {
+    "skip": "Saltar al contenido",
+    "inicio": "Inicio",
+    "sobre": "Sobre mí",
+    "experiencia": "Experiencia",
+    "proyectos": "Proyectos",
+    "habilidades": "Habilidades",
+    "certificados": "Certificados",
+    "contacto": "Contacto",
+    "menu": "Abrir menú",
+    "tema": "Cambiar entre modo claro y oscuro",
+    "idioma": "Cambiar idioma a inglés"
+  },
+  "hero": {
+    "foto_alt": "Foto de Cristian Alexander Muñoz Caro",
+    "titulo": "Tecnólogo en Análisis y Desarrollo de Software · QA · Automatización · Datos · Soporte TI",
+    "ubicacion": "Medellín, Colombia",
+    "descargar": "Descargar CV",
+    "ver_proyectos": "Ver proyectos"
+  },
+  "sobre": {
+    "titulo": "Sobre mí",
+    "texto": "Me apasiona la tecnología y decidí convertirla en mi profesión: hoy soy Tecnólogo en Análisis y Desarrollo de Software, con experiencia en QA, automatización con Python y reportes en SQL, y más de 700 horas de formación certificada. Antes de llegar a TI trabajé 12 años en facturación, inventarios, pedidos y atención al cliente, lo que me dio disciplina, atención al detalle y una visión práctica de cómo los datos impactan un negocio. Disfruto encontrar tareas repetitivas y convertirlas en procesos automáticos y confiables, y busco seguir creciendo en el área de TI aportando soluciones que hagan más eficiente el trabajo de los equipos."
+  },
+  "experiencia": {
+    "titulo": "Experiencia",
+    "qv": {
+      "cargo": "Aprendiz de Desarrollo de Software",
+      "periodo": "Sep. 2025 – Mar. 2026",
+      "b1": "Reestructuré por completo una herramienta de automatización en Python y Selenium para asignar pruebas técnicas en Moodle; propuse e implementé la asignación por lotes desde Excel con generación automática de documentos Word. El proceso pasó de 7 minutos a menos de 30 segundos por candidato.",
+      "b2": "Construí reportes en SQL que consolidan resultados por candidato (nota, nivel alcanzado y porcentaje de aprobación) para el equipo de análisis.",
+      "b3": "Ejecuté pruebas funcionales y reporte de incidencias, participé en revisiones de código, elaboré documentación técnica y administré WordPress y Moodle."
+    },
+    "emi": {
+      "cargo": "Vendedor y Apoyo Administrativo",
+      "periodo": "Jul. 2013 – Sep. 2025",
+      "b1": "Facturación, manejo de caja y atención al cliente en el sistema POS DOMINIUM; control de inventarios, pedidos y relación con proveedores; apoyo administrativo y en los sistemas SGC y SST."
+    }
+  },
+  "proyectos": {
+    "titulo": "Proyectos",
+    "intro": "Casos de estudio: el problema, cómo lo resolví, con qué herramientas y qué resultado tuvo.",
+    "problema": "Problema",
+    "solucion": "Solución",
+    "herramientas": "Herramientas",
+    "resultado": "Resultado",
+    "ver_detalle": "Ver detalle",
+    "ver_repo": "Ver repositorio",
+    "cerrar": "Cerrar",
+    "privado": "Código privado · demostración a solicitud",
+    "tag_sub": "Subconsultas",
+    "p1": {
+      "titulo": "Automatización de asignación de pruebas en Moodle",
+      "problema": "Asignar una prueba técnica a cada candidato en Moodle tomaba unos 7 minutos de clics repetitivos, y los candidatos se procesaban uno a la vez.",
+      "solucion": "Reestructuré la herramienta en Python y Selenium y añadí un modo por lotes: lee los candidatos desde una plantilla de Excel y genera un documento Word por cada uno.",
+      "resultado": "De 7 minutos a menos de 30 segundos por candidato, y cualquier cantidad de candidatos en una sola ejecución.",
+      "d1": "La herramienta original automatizaba parte del proceso, pero era difícil de mantener y solo atendía un candidato por ejecución. La reorganicé por responsabilidades y validé los datos de entrada con Pydantic, para que un error en la plantilla se detecte antes de tocar Moodle.",
+      "d2": "El modo por lotes lee la plantilla con openpyxl, asigna las pruebas en Moodle con Selenium y genera con python-docx el documento de cada candidato.",
+      "d3": "El código pertenece a la empresa, así que no lo publico ni muestro capturas internas. Puedo hacer una demostración en una entrevista."
+    },
+    "p2": {
+      "titulo": "Reportes SQL de resultados",
+      "problema": "El equipo de análisis necesitaba ver, por candidato, la nota, el nivel alcanzado y el porcentaje de aprobación, y esos datos estaban repartidos en varias tablas de Moodle.",
+      "solucion": "Consultas SQL con JOIN, subconsultas y CASE publicadas como reportes dentro de Moodle (Configurable Reports).",
+      "resultado": "Un reporte consolidado y siempre actualizado, sin armar hojas de cálculo a mano.",
+      "d1": "Este es un ejemplo con nombres de tablas genéricos y datos ficticios; muestra la estructura de las consultas sin exponer la base de datos real:",
+      "d2": "La subconsulta calcula el porcentaje de respuestas correctas de cada intento y CASE convierte la nota en un nivel legible para el equipo."
+    },
+    "p3": {
+      "titulo": "ERP modular multiempresa",
+      "problema": "Un negocio pequeño necesita inventario, facturación y clientes en un solo sistema, con varias empresas aisladas en la misma instalación.",
+      "solucion": "API con Django y Django REST Framework sobre PostgreSQL, organizada por módulos, con la lógica de negocio en servicios y todo en contenedores Docker.",
+      "resultado": "78 pruebas automatizadas en verde con Pytest, incluidas pruebas de aislamiento entre empresas.",
+      "d1": "Proyecto personal en desarrollo. Cada módulo (clientes y proveedores, inventario, facturación) tiene sus modelos, servicios y pruebas; el inventario funciona como un libro mayor de movimientos que no se editan ni se borran.",
+      "d2": "El código es privado. Puedo mostrarlo y explicarlo en una entrevista."
+    },
+    "p4": {
+      "titulo": "Books Scraper & Excel Reporter",
+      "problema": "Copiar a mano los datos de un catálogo web de libros (título, precio, calificación y disponibilidad) es lento y propenso a errores.",
+      "solucion": "Un script en Python con menú interactivo: se elige una categoría (o todas), recorre todas sus páginas con requests y BeautifulSoup y genera el reporte con openpyxl.",
+      "resultado": "Un reporte de Excel con formato listo para leer: calificaciones por colores, columnas ajustadas, fecha y total de libros.",
+      "d1": "Usa Books to Scrape, un catálogo público hecho para practicar web scraping. El código está separado en dos partes: la extracción (scraper.py) y la generación del reporte (reporter.py).",
+      "d2": "El repositorio es público e incluye las instrucciones para ejecutarlo."
+    },
+    "p5": {
+      "titulo": "Este sitio",
+      "problema": "Un CV de una página no alcanza para mostrar proyectos y certificados.",
+      "solucion": "Sitio estático bilingüe, sin frameworks, con modo oscuro y una galería de certificados con filtros.",
+      "resultado": "Publicado en GitHub Pages; los certificados se publican con los datos personales tapados.",
+      "d1": "HTML, CSS y JavaScript puros, sin paso de compilación. Los textos de cada idioma viven en archivos JSON y la galería se arma a partir de un archivo de datos.",
+      "d2": "Antes de publicar, un script en Python tapa la cédula y los códigos de verificación de cada certificado y convierte las páginas en imagen, para que no quede ningún texto oculto debajo."
+    },
+    "futuro": {
+      "titulo": "Próximamente",
+      "texto": "Dashboards en Power BI y proyectos de análisis de datos de mis cursos."
+    }
+  },
+  "habilidades": {
+    "titulo": "Habilidades",
+    "qa": "QA y pruebas",
+    "auto": "Automatización y programación",
+    "datos": "Datos",
+    "herr": "Herramientas",
+    "ia": "IA",
+    "metod": "Metodologías",
+    "soporte": "Soporte TI",
+    "idiomas": "Idiomas",
+    "funcionales": "Pruebas funcionales",
+    "proyecto_personal": "en proyecto personal",
+    "sql_aplicado": "aplicado en prácticas",
+    "excel": "Excel avanzado",
+    "eda": "Análisis exploratorio con Python",
+    "formacion": "formación",
+    "mantenimiento": "Mantenimiento preventivo y correctivo de PC",
+    "so": "Instalación de sistemas operativos",
+    "diagnostico": "Diagnóstico de fallas",
+    "espanol": "Español",
+    "ingles": "Inglés",
+    "nativo": "nativo",
+    "basico": "básico",
+    "bases": "bases",
+    "intermedio": "intermedio",
+    "basico_intermedio": "básico-intermedio",
+    "aplicado": "aplicado",
+    "basico_intermedio_aplicado": "básico-intermedio, aplicado",
+    "intermedio_aplicado": "intermedio, aplicado"
+  },
+  "certificados": {
+    "titulo": "Certificados",
+    "total": "+700 horas de formación certificada",
+    "ver_todos": "Ver todos",
+    "ver_menos": "Ver solo destacados",
+    "ver_pdf": "Ver PDF",
+    "acta": "Acta de grado",
+    "horas": "h",
+    "miniatura": "Miniatura del certificado",
+    "filtrar": "Filtrar certificados por categoría",
+    "filtros": {
+      "todos": "Todos",
+      "qa": "QA y calidad",
+      "python-datos": "Python y datos",
+      "agil": "Ágil",
+      "ingles": "Inglés",
+      "herramientas": "Herramientas",
+      "titulos": "Títulos"
+    },
+    "pie": "Certificados verificables a solicitud.",
+    "error": "No se pudieron cargar los certificados. Recarga la página para intentarlo de nuevo."
+  },
+  "contacto": {
+    "titulo": "Contacto",
+    "intro": "¿Tienes una vacante o un proyecto en mente? Escríbeme.",
+    "correo": "Correo",
+    "ubicacion": "Ubicación",
+    "referencias": "Referencias disponibles a solicitud.",
+    "nombre": "Nombre",
+    "email": "Tu correo",
+    "mensaje": "Mensaje",
+    "enviar": "Enviar mensaje",
+    "enviando": "Enviando…",
+    "ok": "¡Gracias! Tu mensaje fue enviado.",
+    "error": "No se pudo enviar el mensaje. Escríbeme directamente a mi correo.",
+    "mailto": "Se abrirá tu aplicación de correo con el mensaje listo para enviar.",
+    "asunto": "Contacto desde el CV virtual"
+  },
+  "footer": {
+    "texto": "Cristian Alexander Muñoz Caro · Hecho con HTML, CSS y JavaScript"
+  }
+}

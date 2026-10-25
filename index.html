@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cristian Alexander Muñoz Caro · CV</title>
+  <meta name="description" content="Tecnólogo en Análisis y Desarrollo de Software: QA, automatización con Python, datos y soporte TI. Experiencia, proyectos y certificados.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.ico" sizes="any">
+
+  <!-- Aplica el tema guardado ANTES de pintar la página, para evitar un parpadeo
+       de modo claro cuando la persona eligió el oscuro. -->
+  <script>
+    try {
+      var tema = localStorage.getItem("tema");
+      if (tema === "light" || tema === "dark") document.documentElement.dataset.theme = tema;
+    } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido" data-i18n="nav.skip">Saltar al contenido</a>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#inicio">Cristian Muñoz</a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu"
+              data-i18n-attr="aria-label:nav.menu" aria-label="Abrir menú">
+        <span class="nav__bars" aria-hidden="true"></span>
+      </button>
+
+      <nav id="menu" class="nav__menu">
+        <a href="#sobre" data-i18n="nav.sobre">Sobre mí</a>
+        <a href="#experiencia" data-i18n="nav.experiencia">Experiencia</a>
+        <a href="#proyectos" data-i18n="nav.proyectos">Proyectos</a>
+        <a href="#habilidades" data-i18n="nav.habilidades">Habilidades</a>
+        <a href="#certificados" data-i18n="nav.certificados">Certificados</a>
+        <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button id="btn-tema" class="icon-btn" type="button"
+                data-i18n-attr="aria-label:nav.tema" aria-label="Cambiar entre modo claro y oscuro">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+        </button>
+        <button id="btn-idioma" class="lang-btn" type="button"
+                data-i18n-attr="aria-label:nav.idioma" aria-label="Cambiar idioma a inglés">
+          <span data-lang="es">ES</span> | <span data-lang="en">EN</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ INICIO ============ -->
+    <section id="inicio" class="hero">
+      <div class="container hero__inner">
+        <img class="hero__foto" src="assets/img/foto.jpg" width="240" height="240"
+             alt="Foto de Cristian Alexander Muñoz Caro" data-i18n-attr="alt:hero.foto_alt">
+        <div>
+          <h1 class="hero__nombre">
+            <span>Cristian Alexander</span>
+            <span class="hero__apellidos">Muñoz Caro</span>
+          </h1>
+          <p class="hero__titulo" data-i18n="hero.titulo">Tecnólogo en Análisis y Desarrollo de Software · QA · Automatización · Datos · Soporte TI</p>
+          <p class="hero__ubicacion" data-i18n="hero.ubicacion">Medellín, Colombia</p>
+          <div class="hero__botones">
+            <a class="btn btn--primary" href="assets/cv/CV_Cristian_Munoz_Caro.pdf" download data-i18n="hero.descargar">Descargar CV</a>
+            <a class="btn btn--outline" href="#proyectos" data-i18n="hero.ver_proyectos">Ver proyectos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2 data-i18n="sobre.titulo">Sobre mí</h2>
+        <p class="lead" data-i18n="sobre.texto">Me apasiona la tecnología y decidí convertirla en mi profesión: hoy soy Tecnólogo en Análisis y Desarrollo de Software, con experiencia en QA, automatización con Python y reportes en SQL, y más de 700 horas de formación certificada. Antes de llegar a TI trabajé 12 años en facturación, inventarios, pedidos y atención al cliente, lo que me dio disciplina, atención al detalle y una visión práctica de cómo los datos impactan un negocio. Disfruto encontrar tareas repetitivas y convertirlas en procesos automáticos y confiables, y busco seguir creciendo en el área de TI aportando soluciones que hagan más eficiente el trabajo de los equipos.</p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCIA ============ -->
+    <section id="experiencia" class="section section--alt">
+      <div class="container">
+        <h2 data-i18n="experiencia.titulo">Experiencia</h2>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <p class="timeline__periodo" data-i18n="experiencia.qv.periodo">Sep. 2025 – Mar. 2026</p>
+            <h3><span data-i18n="experiencia.qv.cargo">Aprendiz de Desarrollo de Software</span></h3>
+            <p class="timeline__empresa">Q-Vision Technologies / IzyAcademy</p>
+            <ul>
+              <li data-i18n="experiencia.qv.b1">Reestructuré por completo una herramienta de automatización en Python y Selenium para asignar pruebas técnicas en Moodle; propuse e implementé la asignación por lotes desde Excel con generación automática de documentos Word. El proceso pasó de 7 minutos a menos de 30 segundos por candidato.</li>
+              <li data-i18n="experiencia.qv.b2">Construí reportes en SQL que consolidan resultados por candidato (nota, nivel alcanzado y porcentaje de aprobación) para el equipo de análisis.</li>
+              <li data-i18n="experiencia.qv.b3">Ejecuté pruebas funcionales y reporte de incidencias, participé en revisiones de código, elaboré documentación técnica y administré WordPress y Moodle.</li>
+            </ul>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__periodo" data-i18n="experiencia.emi.periodo">Jul. 2013 – Sep. 2025</p>
+            <h3><span data-i18n="experiencia.emi.cargo">Vendedor y Apoyo Administrativo</span></h3>
+            <p class="timeline__empresa">Droguería Emi</p>
+            <ul>
+              <li data-i18n="experiencia.emi.b1">Facturación, manejo de caja y atención al cliente en el sistema POS DOMINIUM; control de inventarios, pedidos y relación con proveedores; apoyo administrativo y en los sistemas SGC y SST.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2 data-i18n="proyectos.titulo">Proyectos</h2>
+        <p class="section__intro" data-i18n="proyectos.intro">Casos de estudio: el problema, cómo lo resolví, con qué herramientas y qué resultado tuvo.</p>
+
+        <div class="grid grid--proyectos">
+          <!-- 1. Moodle -->
+          <article class="card proyecto">
+            <h3 data-i18n="proyectos.p1.titulo">Automatización de asignación de pruebas en Moodle</h3>
+            <dl class="proyecto__caso">
+              <dt data-i18n="proyectos.problema">Problema</dt>
+              <dd data-i18n="proyectos.p1.problema"></dd>
+              <dt data-i18n="proyectos.solucion">Solución</dt>
+              <dd data-i18n="proyectos.p1.solucion"></dd>
+              <dt data-i18n="proyectos.herramientas">Herramientas</dt>
+              <dd><ul class="tags"><li>Python</li><li>Selenium</li><li>Pydantic</li><li>python-docx</li><li>openpyxl</li></ul></dd>
+              <dt data-i18n="proyectos.resultado">Resultado</dt>
+              <dd data-i18n="proyectos.p1.resultado"></dd>
+            </dl>
+            <p class="proyecto__nota" data-i18n="proyectos.privado">Código privado · demostración a solicitud</p>
+            <div class="proyecto__acciones">
+              <button class="btn btn--small btn--outline" type="button" data-dialogo="det-p1" data-i18n="proyectos.ver_detalle">Ver detalle</button>
+            </div>
+          </article>
+
+          <!-- 2. SQL -->
+          <article class="card proyecto">
+            <h3 data-i18n="proyectos.p2.titulo">Reportes SQL de resultados</h3>
+            <dl class="proyecto__caso">
+              <dt data-i18n="proyectos.problema">Problema</dt>
+              <dd data-i18n="proyectos.p2.problema"></dd>
+              <dt data-i18n="proyectos.solucion">Solución</dt>
+              <dd data-i18n="proyectos.p2.solucion"></dd>
+              <dt data-i18n="proyectos.herramientas">Herramientas</dt>
+              <dd><ul class="tags"><li>SQL</li><li>JOIN</li><li data-i18n="proyectos.tag_sub">Subconsultas</li><li>CASE</li><li>Moodle Configurable Reports</li></ul></dd>
+              <dt data-i18n="proyectos.resultado">Resultado</dt>
+              <dd data-i18n="proyectos.p2.resultado"></dd>
+            </dl>
+            <div class="proyecto__acciones">
+              <button class="btn btn--small btn--outline" type="button" data-dialogo="det-p2" data-i18n="proyectos.ver_detalle">Ver detalle</button>
+            </div>
+          </article>
+
+          <!-- 3. ERP -->
+          <article class="card proyecto">
+            <h3 data-i18n="proyectos.p3.titulo">ERP modular multiempresa</h3>
+            <dl class="proyecto__caso">
+              <dt data-i18n="proyectos.problema">Problema</dt>
+              <dd data-i18n="proyectos.p3.problema"></dd>
+              <dt data-i18n="proyectos.solucion">Solución</dt>
+              <dd data-i18n="proyectos.p3.solucion"></dd>
+              <dt data-i18n="proyectos.herramientas">Herramientas</dt>
+              <dd><ul class="tags"><li>Django</li><li>DRF</li><li>PostgreSQL</li><li>Docker</li><li>Pytest</li></ul></dd>
+              <dt data-i18n="proyectos.resultado">Resultado</dt>
+              <dd data-i18n="proyectos.p3.resultado"></dd>
+            </dl>
+            <p class="proyecto__nota" data-i18n="proyectos.privado">Código privado · demostración a solicitud</p>
+            <div class="proyecto__acciones">
+              <button class="btn btn--small btn--outline" type="button" data-dialogo="det-p3" data-i18n="proyectos.ver_detalle">Ver detalle</button>
+            </div>
+          </article>
+
+          <!-- 4. Books scraper -->
+          <article class="card proyecto">
+            <h3 data-i18n="proyectos.p4.titulo">Books Scraper &amp; Excel Reporter</h3>
+            <dl class="proyecto__caso">
+              <dt data-i18n="proyectos.problema">Problema</dt>
+              <dd data-i18n="proyectos.p4.problema"></dd>
+              <dt data-i18n="proyectos.solucion">Solución</dt>
+              <dd data-i18n="proyectos.p4.solucion"></dd>
+              <dt data-i18n="proyectos.herramientas">Herramientas</dt>
+              <dd><ul class="tags"><li>Python</li><li>requests</li><li>BeautifulSoup</li><li>openpyxl</li></ul></dd>
+              <dt data-i18n="proyectos.resultado">Resultado</dt>
+              <dd data-i18n="proyectos.p4.resultado"></dd>
+            </dl>
+            <div class="proyecto__acciones">
+              <button class="btn btn--small btn--outline" type="button" data-dialogo="det-p4" data-i18n="proyectos.ver_detalle">Ver detalle</button>
+              <a class="btn btn--small btn--primary" href="https://github.com/Lush0120/books-scraper" target="_blank" rel="noopener" data-i18n="proyectos.ver_repo">Ver repositorio</a>
+            </div>
+          </article>
+
+          <!-- 5. Este sitio -->
+          <article class="card proyecto">
+            <h3 data-i18n="proyectos.p5.titulo">Este sitio</h3>
+            <dl class="proyecto__caso">
+              <dt data-i18n="proyectos.problema">Problema</dt>
+              <dd data-i18n="proyectos.p5.problema"></dd>
+              <dt data-i18n="proyectos.solucion">Solución</dt>
+              <dd data-i18n="proyectos.p5.solucion"></dd>
+              <dt data-i18n="proyectos.herramientas">Herramientas</dt>
+              <dd><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li></ul></dd>
+              <dt data-i18n="proyectos.resultado">Resultado</dt>
+              <dd data-i18n="proyectos.p5.resultado"></dd>
+            </dl>
+            <div class="proyecto__acciones">
+              <button class="btn btn--small btn--outline" type="button" data-dialogo="det-p5" data-i18n="proyectos.ver_detalle">Ver detalle</button>
+              <a class="btn btn--small btn--primary" href="https://github.com/Lush0120/Lush0120.github.io" target="_blank" rel="noopener" data-i18n="proyectos.ver_repo">Ver repositorio</a>
+            </div>
+          </article>
+
+          <!-- Espacio para proyectos futuros -->
+          <article class="card proyecto proyecto--futuro">
+            <h3 data-i18n="proyectos.futuro.titulo">Próximamente</h3>
+            <p data-i18n="proyectos.futuro.texto">Dashboards en Power BI y proyectos de análisis de datos de mis cursos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detalles de proyectos: <dialog> nativo (Esc lo cierra y atrapa el foco) -->
+    <dialog id="det-p1" class="dialogo" aria-labelledby="det-p1-t">
+      <h3 id="det-p1-t" data-i18n="proyectos.p1.titulo"></h3>
+      <p data-i18n="proyectos.p1.d1"></p>
+      <p data-i18n="proyectos.p1.d2"></p>
+      <p data-i18n="proyectos.p1.d3"></p>
+      <form method="dialog"><button class="btn btn--small btn--primary" data-i18n="proyectos.cerrar">Cerrar</button></form>
+    </dialog>
+
+    <dialog id="det-p2" class="dialogo" aria-labelledby="det-p2-t">
+      <h3 id="det-p2-t" data-i18n="proyectos.p2.titulo"></h3>
+      <p data-i18n="proyectos.p2.d1"></p>
+<pre class="codigo"><code>SELECT c.nombre                          AS candidato,
+       p.nombre                          AS prueba,
+       i.nota,
+       CASE
+         WHEN i.nota &gt;= 4.5 THEN 'Avanzado'
+         WHEN i.nota &gt;= 3.5 THEN 'Intermedio'
+         ELSE 'Básico'
+       END                               AS nivel,
+       (SELECT ROUND(100.0 * SUM(CASE WHEN r.correcta THEN 1 ELSE 0 END)
+                     / COUNT(*), 1)
+          FROM respuestas r
+         WHERE r.intento_id = i.id)      AS porcentaje_aprobacion
+  FROM intentos i
+  JOIN candidatos c ON c.id = i.candidato_id
+  JOIN pruebas    p ON p.id = i.prueba_id
+ ORDER BY c.nombre, p.nombre;
+
+-- candidato     | prueba        | nota | nivel      | porcentaje_aprobacion
+-- Ana Pérez     | Python básico |  4.6 | Avanzado   |  92.0
+-- Luis Gómez    | SQL           |  3.8 | Intermedio |  76.0</code></pre>
+      <p data-i18n="proyectos.p2.d2"></p>
+      <form method="dialog"><button class="btn btn--small btn--primary" data-i18n="proyectos.cerrar">Cerrar</button></form>
+    </dialog>
+
+    <dialog id="det-p3" class="dialogo" aria-labelledby="det-p3-t">
+      <h3 id="det-p3-t" data-i18n="proyectos.p3.titulo"></h3>
+      <p data-i18n="proyectos.p3.d1"></p>
+      <p data-i18n="proyectos.p3.d2"></p>
+      <form method="dialog"><button class="btn btn--small btn--primary" data-i18n="proyectos.cerrar">Cerrar</button></form>
+    </dialog>
+
+    <dialog id="det-p4" class="dialogo" aria-labelledby="det-p4-t">
+      <h3 id="det-p4-t" data-i18n="proyectos.p4.titulo"></h3>
+      <p data-i18n="proyectos.p4.d1"></p>
+      <p data-i18n="proyectos.p4.d2"></p>
+      <form method="dialog"><button class="btn btn--small btn--primary" data-i18n="proyectos.cerrar">Cerrar</button></form>
+    </dialog>
+
+    <dialog id="det-p5" class="dialogo" aria-labelledby="det-p5-t">
+      <h3 id="det-p5-t" data-i18n="proyectos.p5.titulo"></h3>
+      <p data-i18n="proyectos.p5.d1"></p>
+      <p data-i18n="proyectos.p5.d2"></p>
+      <form method="dialog"><button class="btn btn--small btn--primary" data-i18n="proyectos.cerrar">Cerrar</button></form>
+    </dialog>
+
+    <!-- ============ HABILIDADES ============ -->
+    <section id="habilidades" class="section section--alt">
+      <div class="container">
+        <h2 data-i18n="habilidades.titulo">Habilidades</h2>
+        <div class="grid grid--habilidades">
+          <div class="card">
+            <h3 data-i18n="habilidades.qa">QA y pruebas</h3>
+            <ul class="skills">
+              <li>Selenium WebDriver + POM <span class="nivel" data-i18n="habilidades.intermedio">intermedio</span></li>
+              <li>Screenplay <span class="nivel" data-i18n="habilidades.intermedio">intermedio</span></li>
+              <li><span data-i18n="habilidades.funcionales">Pruebas funcionales</span> <span class="nivel" data-i18n="habilidades.basico_intermedio">básico-intermedio</span></li>
+              <li>Pytest</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 data-i18n="habilidades.auto">Automatización y programación</h3>
+            <ul class="skills">
+              <li>Python <span class="nivel" data-i18n="habilidades.basico_intermedio_aplicado">básico-intermedio, aplicado</span></li>
+              <li>HTML / CSS <span class="nivel" data-i18n="habilidades.intermedio">intermedio</span></li>
+              <li>JavaScript, PHP <span class="nivel" data-i18n="habilidades.bases">bases</span></li>
+              <li>Django / DRF <span class="nivel" data-i18n="habilidades.proyecto_personal">en proyecto personal</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 data-i18n="habilidades.datos">Datos</h3>
+            <ul class="skills">
+              <li>SQL <span class="nivel" data-i18n="habilidades.sql_aplicado">aplicado en prácticas</span></li>
+              <li>PostgreSQL</li>
+              <li data-i18n="habilidades.excel">Excel avanzado</li>
+              <li>Power BI <span class="nivel" data-i18n="habilidades.bases">bases</span></li>
+              <li><span data-i18n="habilidades.eda">Análisis exploratorio con Python</span> <span class="nivel" data-i18n="habilidades.formacion">formación</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 data-i18n="habilidades.herr">Herramientas</h3>
+            <ul class="skills">
+              <li>Git</li><li>Docker</li><li>WordPress</li><li>Moodle</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 data-i18n="habilidades.ia">IA</h3>
+            <ul class="skills">
+              <li>Claude</li><li>Claude Code</li><li>ChatGPT</li><li>Cursor</li><li>Gamma</li><li>Gemini</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 data-i18n="habilidades.metod">Metodologías</h3>
+            <ul class="skills">
+              <li>Scrum / Agile <span class="nivel" data-i18n="habilidades.intermedio_aplicado">intermedio, aplicado</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 data-i18n="habilidades.soporte">Soporte TI</h3>
+            <ul class="skills">
+              <li data-i18n="habilidades.mantenimiento">Mantenimiento preventivo y correctivo de PC</li>
+              <li data-i18n="habilidades.so">Instalación de sistemas operativos</li>
+              <li data-i18n="habilidades.diagnostico">Diagnóstico de fallas</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 data-i18n="habilidades.idiomas">Idiomas</h3>
+            <ul class="skills">
+              <li><span data-i18n="habilidades.espanol">Español</span> <span class="nivel" data-i18n="habilidades.nativo">nativo</span></li>
+              <li><span data-i18n="habilidades.ingles">Inglés</span> <span class="nivel">B1–B2</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICADOS ============ -->
+    <section id="certificados" class="section">
+      <div class="container">
+        <h2 data-i18n="certificados.titulo">Certificados</h2>
+        <p class="certs__total" data-i18n="certificados.total">+700 horas de formación certificada</p>
+
+        <div id="filtros" class="filtros" role="group" data-i18n-attr="aria-label:certificados.filtrar" aria-label="Filtrar certificados por categoría" hidden></div>
+
+        <!-- La galería se arma desde data/certificados.json (ver js/main.js) -->
+        <ul id="galeria" class="grid grid--certs" aria-live="polite"></ul>
+
+        <div class="certs__acciones">
+          <button id="btn-ver-todos" class="btn btn--outline" type="button" aria-expanded="false" aria-controls="galeria" data-i18n="certificados.ver_todos">Ver todos</button>
+        </div>
+        <p class="certs__pie" data-i18n="certificados.pie">Certificados verificables a solicitud.</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section id="contacto" class="section section--alt">
+      <div class="container contacto">
+        <div>
+          <h2 data-i18n="contacto.titulo">Contacto</h2>
+          <p data-i18n="contacto.intro">¿Tienes una vacante o un proyecto en mente? Escríbeme.</p>
+          <ul class="contacto__lista">
+            <li><span class="contacto__etiqueta" data-i18n="contacto.correo">Correo</span>
+                <a href="mailto:yoesel52@gmail.com">yoesel52@gmail.com</a></li>
+            <li><span class="contacto__etiqueta">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/cristian-alexander-mu%C3%B1oz-caro-88648b306" target="_blank" rel="noopener">cristian-alexander-muñoz-caro</a></li>
+            <li><span class="contacto__etiqueta">GitHub</span>
+                <a href="https://github.com/Lush0120" target="_blank" rel="noopener">github.com/Lush0120</a></li>
+            <li><span class="contacto__etiqueta" data-i18n="contacto.ubicacion">Ubicación</span>
+                <span>Medellín, Colombia</span></li>
+          </ul>
+          <p class="contacto__referencias" data-i18n="contacto.referencias">Referencias disponibles a solicitud.</p>
+        </div>
+
+        <form id="form-contacto" class="card form" novalidate>
+          <label for="f-nombre" data-i18n="contacto.nombre">Nombre</label>
+          <input id="f-nombre" name="nombre" type="text" autocomplete="name" required maxlength="100">
+
+          <label for="f-email" data-i18n="contacto.email">Tu correo</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="150">
+
+          <label for="f-mensaje" data-i18n="contacto.mensaje">Mensaje</label>
+          <textarea id="f-mensaje" name="mensaje" rows="5" required maxlength="3000"></textarea>
+
+          <button class="btn btn--primary" type="submit" data-i18n="contacto.enviar">Enviar mensaje</button>
+          <p id="form-estado" class="form__estado" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span>© <span id="anio">2026</span></span> · <span data-i18n="footer.texto">Cristian Alexander Muñoz Caro · Hecho con HTML, CSS y JavaScript</span></p>
+  </footer>
+</body>
+</html>

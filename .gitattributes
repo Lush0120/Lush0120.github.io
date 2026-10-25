@@ -1,0 +1,11 @@
+# Archivos de texto: Git normaliza los saltos de línea a LF en el repositorio.
+* text=auto
+
+# Binarios: Git nunca debe tocar sus bytes. Sin esto, un PDF que parece texto
+# (como el que genera ReportLab) podría recibir conversiones LF/CRLF y quedar dañado.
+*.pdf  binary
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.webp binary
+*.ico  binary

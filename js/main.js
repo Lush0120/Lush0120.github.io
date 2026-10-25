@@ -7,7 +7,7 @@
    ========================================================= */
 
 // ID del formulario de Formspree (p. ej. "xyzabcd"). Vacío = usar mailto:.
-const FORMSPREE_ID = "";
+const FORMSPREE_ID = "xkjjooze";
 const CORREO = "yoesel52@gmail.com";
 const IDIOMAS = ["es", "en"];
 const CATEGORIAS = ["todos", "qa", "python-datos", "agil", "ingles", "herramientas", "titulos"];

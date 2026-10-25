@@ -59,6 +59,11 @@
 html { scroll-behavior: smooth; scroll-padding-top: 72px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
+/* El atributo `hidden` solo oculta con la regla del navegador, que pierde ante
+   cualquier `display` de nuestras clases (p. ej. `.filtros { display: flex }`).
+   Con esto, `hidden` siempre oculta. */
+[hidden] { display: none !important; }
+
 body {
   margin: 0;
   font-family: var(--font);

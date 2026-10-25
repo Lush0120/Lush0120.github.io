@@ -95,6 +95,14 @@
       "d1": "Plain HTML, CSS and JavaScript with no build step. Each language's text lives in JSON files and the gallery is built from a data file.",
       "d2": "Before publishing, a Python script covers the ID number and verification codes on every certificate and turns each page into an image, so no hidden text is left underneath."
     },
+    "p6": {
+      "titulo": "PDF Redactor",
+      "problema": "To publish my certificates I had to cover my ID number, verification codes and QR codes. Drawing a black box on top is not enough: the text is still underneath and can be copied.",
+      "solucion": "A Python command-line tool that finds the data with rules configured in TOML (plus fixed zones for QR codes or scans), paints those zones on an image of each page and builds a new PDF made only of images.",
+      "resultado": "PDFs ready to publish with no hidden text or metadata: the tool checks at the end that not a single character can be extracted. Covered by automated Pytest tests, MIT licensed.",
+      "d1": "It grew out of the script that prepared the certificates on this site, which I turned into a standalone, reusable project. For scans with no text layer it has optional OCR with Tesseract, and the --revision option saves an image of each page for visual review.",
+      "d2": "The tests use PDFs generated with made-up data: the repository contains no real documents or personal data."
+    },
     "futuro": {
       "titulo": "Coming soon",
       "texto": "Power BI dashboards and data analysis projects from my courses."

@@ -215,6 +215,25 @@
             </div>
           </article>
 
+          <!-- 6. Redactor de PDF -->
+          <article class="card proyecto">
+            <h3 data-i18n="proyectos.p6.titulo">Redactor de PDF</h3>
+            <dl class="proyecto__caso">
+              <dt data-i18n="proyectos.problema">Problema</dt>
+              <dd data-i18n="proyectos.p6.problema"></dd>
+              <dt data-i18n="proyectos.solucion">Solución</dt>
+              <dd data-i18n="proyectos.p6.solucion"></dd>
+              <dt data-i18n="proyectos.herramientas">Herramientas</dt>
+              <dd><ul class="tags"><li>Python</li><li>PyMuPDF</li><li>TOML</li><li>Pytest</li><li>Tesseract OCR</li></ul></dd>
+              <dt data-i18n="proyectos.resultado">Resultado</dt>
+              <dd data-i18n="proyectos.p6.resultado"></dd>
+            </dl>
+            <div class="proyecto__acciones">
+              <button class="btn btn--small btn--outline" type="button" data-dialogo="det-p6" data-i18n="proyectos.ver_detalle">Ver detalle</button>
+              <a class="btn btn--small btn--primary" href="https://github.com/Lush0120/redactor-pdf" target="_blank" rel="noopener" data-i18n="proyectos.ver_repo">Ver repositorio</a>
+            </div>
+          </article>
+
           <!-- Espacio para proyectos futuros -->
           <article class="card proyecto proyecto--futuro">
             <h3 data-i18n="proyectos.futuro.titulo">Próximamente</h3>
@@ -278,6 +297,13 @@
       <h3 id="det-p5-t" data-i18n="proyectos.p5.titulo"></h3>
       <p data-i18n="proyectos.p5.d1"></p>
       <p data-i18n="proyectos.p5.d2"></p>
+      <form method="dialog"><button class="btn btn--small btn--primary" data-i18n="proyectos.cerrar">Cerrar</button></form>
+    </dialog>
+
+    <dialog id="det-p6" class="dialogo" aria-labelledby="det-p6-t">
+      <h3 id="det-p6-t" data-i18n="proyectos.p6.titulo"></h3>
+      <p data-i18n="proyectos.p6.d1"></p>
+      <p data-i18n="proyectos.p6.d2"></p>
       <form method="dialog"><button class="btn btn--small btn--primary" data-i18n="proyectos.cerrar">Cerrar</button></form>
     </dialog>
 

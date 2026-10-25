@@ -95,6 +95,14 @@
       "d1": "HTML, CSS y JavaScript puros, sin paso de compilación. Los textos de cada idioma viven en archivos JSON y la galería se arma a partir de un archivo de datos.",
       "d2": "Antes de publicar, un script en Python tapa la cédula y los códigos de verificación de cada certificado y convierte las páginas en imagen, para que no quede ningún texto oculto debajo."
     },
+    "p6": {
+      "titulo": "Redactor de PDF",
+      "problema": "Para publicar mis certificados tenía que tapar la cédula, los códigos de verificación y los QR. Dibujar un rectángulo negro encima no basta: el texto sigue debajo y se puede copiar.",
+      "solucion": "Una herramienta de línea de comandos en Python que encuentra los datos con reglas configurables en TOML (más zonas fijas para QR o escaneos), pinta las zonas sobre la imagen de cada página y arma un PDF nuevo solo con imágenes.",
+      "resultado": "PDF listos para publicar sin texto oculto ni metadatos: la herramienta verifica al final que no quede ningún carácter extraíble. Con pruebas automatizadas en Pytest y licencia MIT.",
+      "d1": "Nació del script que preparó los certificados de este sitio y lo convertí en un proyecto independiente y reutilizable. Para escaneos sin texto tiene OCR opcional con Tesseract, y la opción --revision guarda una imagen por página para revisarla a ojo.",
+      "d2": "Las pruebas trabajan con PDF generados con datos inventados: el repositorio no contiene ningún documento ni dato real."
+    },
     "futuro": {
       "titulo": "Próximamente",
       "texto": "Dashboards en Power BI y proyectos de análisis de datos de mis cursos."

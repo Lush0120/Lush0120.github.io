@@ -32,9 +32,11 @@
     "qv": {
       "cargo": "Aprendiz de Desarrollo de Software",
       "periodo": "Sep. 2025 – Mar. 2026",
+      "lugar": "Medellín (híbrido)",
       "b1": "Reestructuré por completo una herramienta de automatización en Python y Selenium para asignar pruebas técnicas en Moodle; propuse e implementé la asignación por lotes desde Excel con generación automática de documentos Word. El proceso pasó de 7 minutos a menos de 30 segundos por candidato.",
-      "b2": "Construí reportes en SQL que consolidan resultados por candidato (nota, nivel alcanzado y porcentaje de aprobación) para el equipo de análisis.",
-      "b3": "Ejecuté pruebas funcionales y reporte de incidencias, participé en revisiones de código, elaboré documentación técnica y administré WordPress y Moodle."
+      "b2": "Construí un agente virtual en n8n con modelos de lenguaje (Gemini y OpenAI), integrado a Moodle y WordPress y validado en ambiente de pruebas, que respondía sobre la plataforma, el contenido de los cursos y el avance de cada estudiante.",
+      "b3": "Construí reportes en SQL que consolidan resultados por candidato (nota, nivel alcanzado y porcentaje de aprobación) para el equipo de análisis.",
+      "b4": "Ejecuté pruebas funcionales y reporte de incidencias, participé en revisiones de código, elaboré documentación técnica y administré WordPress y Moodle."
     },
     "emi": {
       "cargo": "Vendedor y Apoyo Administrativo",
@@ -74,10 +76,18 @@
     "p3": {
       "titulo": "ERP modular multiempresa",
       "problema": "Un negocio pequeño necesita inventario, facturación y clientes en un solo sistema, con varias empresas aisladas en la misma instalación.",
-      "solucion": "API con Django y Django REST Framework sobre PostgreSQL, organizada por módulos, con la lógica de negocio en servicios y todo en contenedores Docker.",
-      "resultado": "78 pruebas automatizadas en verde con Pytest, incluidas pruebas de aislamiento entre empresas.",
-      "d1": "Proyecto personal en desarrollo. Cada módulo (clientes y proveedores, inventario, facturación) tiene sus modelos, servicios y pruebas; el inventario funciona como un libro mayor de movimientos que no se editan ni se borran.",
+      "solucion": "API REST con Django y Django REST Framework sobre PostgreSQL, con autenticación JWT, organizada por módulos y con la lógica de negocio en servicios; todo en contenedores Docker.",
+      "resultado": "Más de 200 pruebas automatizadas con Pytest, incluidas pruebas de aislamiento entre empresas.",
+      "d1": "Proyecto personal en desarrollo. Cada módulo (clientes y proveedores, inventario, facturación y pedidos) tiene sus modelos, servicios y pruebas; el inventario funciona como un libro mayor de movimientos que no se editan ni se borran.",
       "d2": "El código es privado. Puedo mostrarlo y explicarlo en una entrevista."
+    },
+    "agente": {
+      "titulo": "Agente virtual educativo con IA",
+      "problema": "Resolver las dudas de los estudiantes sobre la plataforma, los cursos y su propio avance requería que una persona consultara Moodle y respondiera caso por caso.",
+      "solucion": "Un agente en n8n que usa modelos de lenguaje (Gemini y OpenAI) y está integrado a Moodle y WordPress.",
+      "resultado": "Integrado y validado en ambiente de pruebas: respondía sobre la plataforma, los cursos cargados y el avance de cada estudiante.",
+      "d1": "Lo construí durante mis prácticas en Q-Vision Technologies, con n8n conectado a las APIs de Gemini y OpenAI y a Moodle y WordPress.",
+      "d2": "Los módulos restantes quedaron pendientes de la información de las áreas al terminar las prácticas. No incluyo capturas ni datos internos; puedo explicarlo en una entrevista."
     },
     "p4": {
       "titulo": "Books Scraper & Excel Reporter",
@@ -136,7 +146,8 @@
     "basico_intermedio": "básico-intermedio",
     "aplicado": "aplicado",
     "basico_intermedio_aplicado": "básico-intermedio, aplicado",
-    "intermedio_aplicado": "intermedio, aplicado"
+    "intermedio_aplicado": "intermedio, aplicado",
+    "n8n": "n8n con APIs de LLM (Gemini, OpenAI)"
   },
   "certificados": {
     "titulo": "Certificados",

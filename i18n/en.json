@@ -32,9 +32,11 @@
     "qv": {
       "cargo": "Software Development Apprentice",
       "periodo": "Sep 2025 – Mar 2026",
+      "lugar": "Medellín (hybrid)",
       "b1": "Fully restructured a Python + Selenium automation tool that assigns technical tests in Moodle; proposed and built Excel-based batch assignment with automatic Word document generation, cutting the process from 7 minutes to under 30 seconds per candidate.",
-      "b2": "Built SQL reports consolidating results per candidate (score, level reached, pass rate) for the analytics team.",
-      "b3": "Ran functional tests and bug reporting, took part in code reviews, wrote technical documentation and administered WordPress and Moodle."
+      "b2": "Built a virtual assistant in n8n with large language models (Gemini and OpenAI), integrated with Moodle and WordPress and validated in a staging environment, answering questions about the platform, course content and each student's progress.",
+      "b3": "Built SQL reports consolidating results per candidate (score, level reached, pass rate) for the analytics team.",
+      "b4": "Ran functional tests and bug reporting, took part in code reviews, wrote technical documentation and administered WordPress and Moodle."
     },
     "emi": {
       "cargo": "Sales and Administrative Assistant",
@@ -74,10 +76,18 @@
     "p3": {
       "titulo": "Modular multi-tenant ERP",
       "problema": "A small business needs inventory, invoicing and customers in a single system, with several companies isolated within the same installation.",
-      "solucion": "An API built with Django and Django REST Framework on PostgreSQL, organized by modules, with business logic in services and everything running in Docker containers.",
-      "resultado": "78 automated tests passing with Pytest, including tenant isolation tests.",
-      "d1": "Personal project in progress. Each module (customers and suppliers, inventory, invoicing) has its own models, services and tests; inventory works as a ledger of movements that are never edited or deleted.",
+      "solucion": "A REST API with Django and Django REST Framework on PostgreSQL, with JWT authentication, organized in modules with the business logic in services; everything runs in Docker containers.",
+      "resultado": "More than 200 automated tests with Pytest, including tests for isolation between companies.",
+      "d1": "Personal project in progress. Each module (customers and suppliers, inventory, invoicing and orders) has its own models, services and tests; inventory works as a ledger of movements that are never edited or deleted.",
       "d2": "The code is private. I can show and walk through it during an interview."
+    },
+    "agente": {
+      "titulo": "AI virtual assistant for e-learning",
+      "problema": "Answering students' questions about the platform, the courses and their own progress meant someone had to look things up in Moodle and reply case by case.",
+      "solucion": "An n8n agent that uses large language models (Gemini and OpenAI) and is integrated with Moodle and WordPress.",
+      "resultado": "Integrated and validated in a staging environment: it answered questions about the platform, the loaded courses and each student's progress.",
+      "d1": "I built it during my internship at Q-Vision Technologies, with n8n connected to the Gemini and OpenAI APIs and to Moodle and WordPress.",
+      "d2": "The remaining modules were left pending the business areas' input when my internship ended. No screenshots or internal data are included; I can walk through it in an interview."
     },
     "p4": {
       "titulo": "Books Scraper & Excel Reporter",
@@ -136,7 +146,8 @@
     "basico_intermedio": "basic-intermediate",
     "aplicado": "applied",
     "basico_intermedio_aplicado": "basic-intermediate, applied",
-    "intermedio_aplicado": "intermediate, applied"
+    "intermedio_aplicado": "intermediate, applied",
+    "n8n": "n8n with LLM APIs (Gemini, OpenAI)"
   },
   "certificados": {
     "titulo": "Certificates",
